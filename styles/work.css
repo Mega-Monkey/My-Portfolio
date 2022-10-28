@@ -1,0 +1,18 @@
+/* Work Page */
+.watercolor-bg {
+	background: url(../assets/watercolor-bg-rotate.png);
+	height: 100vh;
+	background-size: cover;
+	/* opacity: 0.6; */
+	overscroll-behavior: contain;
+	
+}
+
+body {
+	overscroll-behavior: contain;
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
