@@ -1,7 +1,3 @@
-//This is a pen based off of Codewoofy's eyes follow mouse. It is just cleaned up, face removed, and then made to be a little more cartoony. https://codepen.io/Codewoofy/pen/VeBJEP
-
-
-
 $(".move-area").mousemove(function(event) {
   var eyeOne = $(".eye-one");
   // console.log('eyeOne', eyeOne)
@@ -215,6 +211,25 @@ $(".almond-five").click(function(){
   }
 })
 
+// Automatic Blinking
+
+setInterval(() => {
+  console.log('eyes closed')
+  $('.almond-mon > .shut span').css('height', '100%')
+  setTimeout(() => {
+    console.log('eyes open')
+    $('.almond-mon > .shut span').css('height', '15%')
+  }, 200);
+}, Math.floor(Math.random() * (10000 - 7000 + 1) + 7000));
+
+setInterval(() => {
+  console.log('eyes closed')
+  $('.almond-ra > .shut span').css('height', '100%')
+  setTimeout(() => {
+    console.log('eyes open')
+    $('.almond-ra > .shut span').css('height', '15%')
+  }, 200);
+}, Math.floor(Math.random() * (10000 - 7000 + 1) + 7000));
 
 
 

@@ -1,3 +1,39 @@
+/* test code */
+/* body {
+  background: #333;
+}
+.eye {
+  position: absolute;
+    top:50%;
+    left: 50%;
+  width: 200px;
+  height: 200px;
+  background: white;
+  transform: translate(-50%, -50%) rotate(45deg);
+  border-radius: 75% 0;
+  overflow: hidden;
+  cursor: pointer;
+	border: black 2px solid;
+}
+
+.ball {
+  width: 70px;
+  height: 70px;
+  background: white;
+  border-radius: 50%;
+  border: 2px solid black;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+
+
+
+/*  */
+
 /* Layout */
 
 .logo {
