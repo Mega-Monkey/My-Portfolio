@@ -1,7 +1,7 @@
 $(function(){
 
 	var comboArray = [0, 0, 0, 0, 0];
-	var combination = [0, 0, 0, 0, 0];
+	var combination = [5, 8, 7, 1, 3];
 	
 	var gridIncrement = $( ".lock-dial ul" ).css('line-height').replace('px', '')/2;
 	var numNums = $( ".lock-dial:eq(0) ul li" ).length;

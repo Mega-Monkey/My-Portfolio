@@ -77,8 +77,13 @@ $(".move-area").mousemove(function(event) {
   });
 });
 
+let displayLockCounter = 0
 
-const backgroundsArray = ['sky-bg', 'sky-flip-bg', 'black-bg', 'none', 'time-bg', 'comp-tree-bg']
+const backgroundsArray = ['nubula-bg','sky-bg', 'sky-flip-bg', 'black-bg', 
+'none', 'time-bg', 'comp-tree-bg']
+
+
+let counterOne = 0
 $(".almond-one").click(function(){
   let almond = $(".almond-one");
   let newBg = backgroundsArray[Math.floor(Math.random()*backgroundsArray.length)]
@@ -91,9 +96,20 @@ $(".almond-one").click(function(){
       }
     }
   })
-  almond.addClass(newBg)
+  if (counterOne < 5) {
+    counterOne = counterOne + 1
+    almond.addClass(newBg)
+  } else if (counterOne == 5) {
+    counterOne = counterOne + 1
+    almond.addClass('char83-bg')
+    displayLockCounter = displayLockCounter + 1
+    if (displayLockCounter == 5) {
+      $('.lock-plate').removeClass('d-none')
+    }
+  }
 })
 
+let counterTwo = 0
 $(".almond-two").click(function(){
   let almond = $(".almond-two");
   let newBg = backgroundsArray[Math.floor(Math.random()*backgroundsArray.length)]
@@ -106,9 +122,20 @@ $(".almond-two").click(function(){
       }
     }
   })
-  almond.addClass(newBg)
+  if (counterTwo < 5) {
+    counterTwo = counterTwo + 1
+    almond.addClass(newBg)
+  } else if (counterTwo == 5) {
+    counterTwo = counterTwo + 1
+    almond.addClass('char84-bg')
+    displayLockCounter = displayLockCounter + 1
+    if (displayLockCounter == 5) {
+      $('.lock-plate').removeClass('d-none')
+    }
+  }
 })
 
+let counterThree = 0
 $(".almond-three").click(function(){
   let almond = $(".almond-three");
   let newBg = backgroundsArray[Math.floor(Math.random()*backgroundsArray.length)]
@@ -121,9 +148,20 @@ $(".almond-three").click(function(){
       }
     }
   })
-  almond.addClass(newBg)
+  if (counterThree < 5) {
+    counterThree = counterThree + 1
+    almond.addClass(newBg)
+  } else if (counterThree == 5) {
+    counterThree = counterThree + 1
+    almond.addClass('char79-bg')
+    // $('.eye-one').addClass('d-none')
+    displayLockCounter = displayLockCounter + 1
+    if (displayLockCounter == 5) {
+      $('.lock-plate').removeClass('d-none')
+    }
+  }
 })
-
+let counterFour = 0
 $(".almond-four").click(function(){
   let almond = $(".almond-four");
   let newBg = backgroundsArray[Math.floor(Math.random()*backgroundsArray.length)]
@@ -136,9 +174,20 @@ $(".almond-four").click(function(){
       }
     }
   })
-  almond.addClass(newBg)
+  if (counterFour < 5) {
+    counterFour = counterFour + 1
+    almond.addClass(newBg)
+  } else if (counterFour == 5) {
+    counterFour = counterFour + 1
+    almond.addClass('char76-bg')
+    displayLockCounter = displayLockCounter + 1
+    if (displayLockCounter == 5) {
+      $('.lock-plate').removeClass('d-none')
+    }
+  }
 })
 
+let counterFive = 0
 $(".almond-five").click(function(){
   let almond = $(".almond-five");
   let newBg = backgroundsArray[Math.floor(Math.random()*backgroundsArray.length)]
@@ -151,8 +200,23 @@ $(".almond-five").click(function(){
       }
     }
   })
-  almond.addClass(newBg)
+
+  if (counterFive < 5) {
+    counterFive = counterFive + 1
+    almond.addClass(newBg)
+  } else if (counterFive == 5) {
+    counterFive = counterFive + 1
+    almond.addClass('char69-bg')
+    // $('.eye-one').addClass('d-none')
+    displayLockCounter = displayLockCounter + 1
+    if (displayLockCounter == 5) {
+      $('.lock-plate').removeClass('d-none')
+    }
+  }
 })
+
+
+
 
 // class EyeCanvas {
 //   constructor(canvas) {

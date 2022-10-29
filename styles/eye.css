@@ -43,6 +43,10 @@
   border: black 3px solid;
 }
 
+.d-none {
+  display: none;
+}
+
 .time-bg{
   background: url(../assets/time-neblua.png);
   background-position: center;
@@ -74,6 +78,54 @@
 
 .white-bg {
   background-color: #fff;
+}
+
+.char83-bg {
+  /* s */
+  background: url(../assets/char\(83\).png);
+  /* background-repeat: no-repeat; */
+  background-size: 25%;
+  background-position: center;
+}
+
+.char84-bg {
+  /* t */
+  background: url(../assets/char\(84\).png);
+  /* background-repeat: no-repeat; */
+  background-size: 25%;
+  background-position: center;
+}
+
+.char79-bg {
+  /* o */
+  background: url(../assets/char\(79\).png);
+  /* background-repeat: no-repeat; */
+  background-size: 25%;
+  background-position: center;
+}
+
+.char76-bg {
+  /* l */
+  background: url(../assets/char\(76\).png);
+  /* background-repeat: no-repeat; */
+  background-size: 25%;
+  background-position: center;
+}
+
+.char69-bg {
+  /* e */
+  background: url(../assets/char\(69\).png);
+  /* background-repeat: no-repeat; */
+  background-size: 25%;
+  background-position: center;
+}
+
+
+
+.nubula-bg {
+  background: url(../assets/nublua.gif);
+  background-position: center;
+  background-size: cover;
 }
 
 .eye-one, .eye-two, .eye-three, .eye-four, .eye-five {
