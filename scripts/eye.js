@@ -83,7 +83,7 @@ const backgroundsArray = ['nubula-bg','sky-bg', 'sky-flip-bg', 'black-bg',
 'none', 'time-bg', 'comp-tree-bg']
 
 
-let counterOne = 0
+let counterOne = 5
 $(".almond-one").click(function(){
   let almond = $(".almond-one");
   let newBg = backgroundsArray[Math.floor(Math.random()*backgroundsArray.length)]
@@ -109,7 +109,7 @@ $(".almond-one").click(function(){
   }
 })
 
-let counterTwo = 0
+let counterTwo = 5
 $(".almond-two").click(function(){
   let almond = $(".almond-two");
   let newBg = backgroundsArray[Math.floor(Math.random()*backgroundsArray.length)]
@@ -135,7 +135,7 @@ $(".almond-two").click(function(){
   }
 })
 
-let counterThree = 0
+let counterThree = 5
 $(".almond-three").click(function(){
   let almond = $(".almond-three");
   let newBg = backgroundsArray[Math.floor(Math.random()*backgroundsArray.length)]
@@ -161,7 +161,7 @@ $(".almond-three").click(function(){
     }
   }
 })
-let counterFour = 0
+let counterFour = 5
 $(".almond-four").click(function(){
   let almond = $(".almond-four");
   let newBg = backgroundsArray[Math.floor(Math.random()*backgroundsArray.length)]
@@ -187,7 +187,7 @@ $(".almond-four").click(function(){
   }
 })
 
-let counterFive = 0
+let counterFive = 5
 $(".almond-five").click(function(){
   let almond = $(".almond-five");
   let newBg = backgroundsArray[Math.floor(Math.random()*backgroundsArray.length)]
