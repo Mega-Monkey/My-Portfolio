@@ -55,7 +55,7 @@ font-family: monospace;
 
 .line-container {
 	width: 100vw;
-	height: 80vh;
+	height: 100vh;
 	text-align: center;
 	overflow: hidden;
 }
@@ -117,12 +117,13 @@ svg {
 @media only screen and (max-width: 768px) {
 	.hero-section {
 		display: flex;
-		flex-direction: column;
+		flex-direction: column-reverse;
 		justify-content: space-evenly;		
 		align-content: center;
 	}
 	
 	.greeting-text {
+		margin-top: 60px;
 		text-align: center;
 		align-items: center;
 		/* padding-left: 20px;
@@ -144,7 +145,8 @@ svg {
 	/* Line Section */
 
 	.line-container {
-		display: none;
+		/* width: 50%; */
+		/* display: none; */
 	}
 
 	/* Work Section */

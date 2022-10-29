@@ -11,7 +11,5 @@ window.addEventListener('scroll', () => {
 
   let drawLength = pathLength * (scrollPercentage + 0.02)
 
-  console.log(scrollPercentage)
-
   path.style.strokeDashoffset = pathLength + drawLength
 })

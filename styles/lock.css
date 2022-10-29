@@ -1,0 +1,114 @@
+#lock-plate{
+	padding: 30px 0;
+	/* border: 1px solid #cfd3d6; */
+	/* background: #ccc; */
+  background: url(../assets/old-brass.jpg);
+	text-align: center;
+	width: 486px;
+	/* background: -webkit-linear-gradient(top, #eee 0%,#949ba0 100%);
+	background: linear-gradient(to bottom, #eee 0%,#949ba0 100%); */
+	border-radius: 4px;
+	margin: 50px auto;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.6);
+	position: absolute;
+  top: 135%;
+  left: 28%;
+  display: none!important;
+}
+
+#lock-plate span{
+  display: none!important;
+	display: block;
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	border-radius: 10px;
+	box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.6), inset 0 -1px 0 rgba(100, 60, 19, 0.8);
+	/* background: #bdc1c4; */
+  background: url(../assets/old-brass.jpg);
+}
+
+#lock-plate span:first-child{
+	top: 9px;
+	left: 9px;
+}
+
+#lock-plate span:nth-child(2){
+	top: 9px;
+	right: 9px;
+}
+
+#lock-plate span:nth-child(3){
+	bottom: 9px;
+	left: 9px;
+}
+
+#lock-plate span:nth-child(4){
+	bottom: 9px;
+	right: 9px;
+}
+
+#lock-wrapper{
+	width: 396px;
+	padding: 0 20px 0 8px;
+	border-radius: 7px;
+	height: 120px;
+	/* border: 1px solid rgba(255, 255, 255, 0.6); */
+	box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.9);
+	/* background: -webkit-linear-gradient(top, #c4c4c4 0%,#676767 100%);
+	background: linear-gradient(to bottom, #c4c4c4 0%,#676767 100%); */
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.welcome-message{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 90px;
+	width: 400px;
+	margin-top: -30px;
+	margin-left: -200px;
+  font-size: 53px;
+	font-weight: bold;
+	color: #5e3d17;
+	text-shadow: 0 -2px 0 #3c2716;
+	/* font-family: Arial, Helvetica, sans-serif; */
+  font-family: Times;
+	display: none;
+}
+
+.lock-dial{
+	height: 120px;
+	width: 68px;
+	margin-left: 11px;
+	/* background: -webkit-linear-gradient(top, #8c9093 0%,#b6babd 9%,#ccd2d6 18%,#ffffff 55%,#ccd2d6 82%,#b6babd 91%,#8c9093 100%);
+	background: linear-gradient(to bottom, #8c9093 0%,#b6babd 9%,#ccd2d6 18%,#ffffff 55%,#ccd2d6 82%,#b6babd 91%,#8c9093 100%); */
+  background: url(../assets/old-brass.jpg);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+	float: left;
+	position: relative;
+	cursor: move;
+}
+
+#lock-wrapper .lock-dial ul{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	list-style: none;
+	font-size: 53px;
+	line-height: 70px;
+	color: #5e3d17;
+	text-shadow: 0 -2px 0 #3c2716;
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;
+	transition: box-shadow .45s linear, color .25s linear;
+	-webkit-transition: box-shadow .45s linear, color .25s linear;
+  font-family: Times;
+}
+
+#lock-wrapper.unlocked .lock-dial ul{
+	color: green;
+	text-shadow: 0 0 5px #3f3;
+}

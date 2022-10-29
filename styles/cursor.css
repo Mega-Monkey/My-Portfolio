@@ -42,3 +42,10 @@ canvas {
   height: 100vh;
 }
 
+@media only screen and (max-width: 1050px) {
+  .a-title {
+    margin-top: 20px;
+    width: 80%;
+  }
+
+}

@@ -6,9 +6,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/eye.css">
+  <link rel="stylesheet" href="styles/lock.css">
+
   <link rel="icon" type="image/x-icon" href="assets/Monkeylogo.ico">
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
-<body>   
+<body class="move-area">   
+
+    <div class='container eye-one-cont'>
+      <div class='almond almond-one white-bg'>
+      <div class='eye eye-one'></div>
+      
+      </div>
+    </div>
+    <div class='container eye-two-cont'>
+      <div class='almond almond-two white-bg'>
+      <div class='eye eye-two'></div>
+      
+      </div>
+    </div>
+    <div class='container eye-three-cont'>
+      <div class='almond almond-three white-bg'>
+      <div class='eye eye-three'></div>
+      
+      </div>
+    </div>
+    <div class='container eye-four-cont'>
+      <div class='almond almond-four white-bg'>
+      <div class='eye eye-four'></div>
+      
+      </div>
+    </div>
+    <div class='container eye-five-cont'>
+      <div class='almond almond-five white-bg'>
+      <div class='eye eye-five'></div>
+      
+      </div>
+    </div>
+  
+    <div id="lock-plate">
+      <span></span><span></span><span></span><span></span>
+      <div id="lock-wrapper">
+        <div class="welcome-message">hrahsbi.html</div>
+        <div class="lock-dial" id="dial-one"><ul data-combo-num="0"><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>0</li><li>1</li><li>2</li><li>3</li><li>4</li></ul></div>
+        <div class="lock-dial" id="dial-two"><ul data-combo-num="0"><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>0</li><li>1</li><li>2</li><li>3</li><li>4</li></ul></div>
+        <div class="lock-dial" id="dial-three"><ul data-combo-num="0"><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>0</li><li>1</li><li>2</li><li>3</li><li>4</li></ul></div>
+        <div class="lock-dial" id="dial-four"><ul data-combo-num="0"><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>0</li><li>1</li><li>2</li><li>3</li><li>4</li></ul></div>
+        <div class="lock-dial" id="dial-five"><ul data-combo-num="0"><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>0</li><li>1</li><li>2</li><li>3</li><li>4</li></ul></div>
+      </div>
+    </div>
+
+
   <section class="hero-section">
     <a href="index.html" class="logo"></a>
     <div class="jar-container">
@@ -27,7 +77,8 @@
       <path d="M875.5 1632.5C875.5 1221.52 2.99888 638 2.99884 0.49999" stroke="black" stroke-width="6" stroke-dasharray="20 20"/>
     </svg>
   </div>
-
+ 
+  
   <section class="section-two">
     <div class="glow-orb-container">
       <a class="work-atag" href="work.html">
@@ -35,6 +86,10 @@
       </a>
     </div>
   </section>
+  
   <script src="scripts/script.js"></script>
+  <script src="scripts/eye.js"></script>
+  <script src="scripts/lock.js"></script>
+  
 </body>
 </html>
