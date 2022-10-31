@@ -20,6 +20,11 @@ body {
   font-size: 50px;
   font-family: monospace;
   text-decoration: none;
+  opacity: 0.3;
+}
+
+span {
+  opacity: 0.3;
 }
 
 .margin-bottom {

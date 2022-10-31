@@ -74,7 +74,7 @@ $(".move-area").mousemove(function(event) {
 });
 
 let displayLockCounter = 0
-
+let monsterAsleep = false
 const backgroundsArray = ['nubula-bg','sky-bg', 'sky-flip-bg', 'black-bg', 
 'none', 'time-bg', 'comp-tree-bg']
 
@@ -101,6 +101,7 @@ $(".almond-one").click(function(){
     displayLockCounter = displayLockCounter + 1
     if (displayLockCounter == 5) {
       $('.lock-plate').removeClass('d-none')
+      sleep()
     }
   }
 })
@@ -127,6 +128,7 @@ $(".almond-two").click(function(){
     displayLockCounter = displayLockCounter + 1
     if (displayLockCounter == 5) {
       $('.lock-plate').removeClass('d-none')
+      sleep()
     }
   }
 })
@@ -154,6 +156,7 @@ $(".almond-three").click(function(){
     displayLockCounter = displayLockCounter + 1
     if (displayLockCounter == 5) {
       $('.lock-plate').removeClass('d-none')
+      sleep()
     }
   }
 })
@@ -179,6 +182,7 @@ $(".almond-four").click(function(){
     displayLockCounter = displayLockCounter + 1
     if (displayLockCounter == 5) {
       $('.lock-plate').removeClass('d-none')
+      sleep()
     }
   }
 })
@@ -207,20 +211,63 @@ $(".almond-five").click(function(){
     displayLockCounter = displayLockCounter + 1
     if (displayLockCounter == 5) {
       $('.lock-plate').removeClass('d-none')
+      sleep()
     }
   }
 })
 
 // Automatic Blinking
+sleep = () => {
+  if (displayLockCounter == 5 && !monsterAsleep) {
+    monsterAsleep = true
+    $('.almond-mon > .shut span').css('height', '25%')
+    setTimeout(() => {
+      $('.almond-mon > .shut span').css('height', '45%')
+      setTimeout(() => {
+        $('.almond-mon > .shut span').css('height', '35%')
+        setTimeout(() => {
+          $('.almond-mon > .shut span').css('height', '55%')
+          setTimeout(() => {
+            $('.almond-mon > .shut span').css('height', '60%')
+            setTimeout(() => {
+              $('.almond-mon > .shut span').css('height', '64%')
+              setTimeout(() => {
+                $('.almond-mon > .shut span').css('height', '66%')
+                setTimeout(() => {
+                  $('.almond-mon > .shut span').css('height', '68%')
+                  setTimeout(() => {
+                    $('.almond-mon > .shut span').css('height', '69%')
+                    setTimeout(() => {
+                      $('.almond-mon > .shut span').css('height', '70%')
+                      setTimeout(() => {
+                        $('.almond-mon > .shut span').css('height', '100%')
+                      }, 500);
+                    }, 500);
+                  }, 500);
+                }, 500);
+              }, 1500);
+            }, 1500);
+          }, 1500);
+        }, 1500);
+      }, 1500);
+    }, 1500);
+    return
+  }
+}
 
-setInterval(() => {
-  console.log('eyes closed')
-  $('.almond-mon > .shut span').css('height', '100%')
-  setTimeout(() => {
-    console.log('eyes open')
-    $('.almond-mon > .shut span').css('height', '15%')
-  }, 200);
-}, Math.floor(Math.random() * (10000 - 7000 + 1) + 7000));
+  setInterval(() => {
+    console.log('eyes closed')
+    if (!monsterAsleep) {
+      $('.almond-mon > .shut span').css('height', '100%')
+      setTimeout(() => {
+        console.log('eyes open')
+        $('.almond-mon > .shut span').css('height', '15%')
+      }, 200);
+    } else {
+      return
+    }
+  }, Math.floor(Math.random() * (10000 - 7000 + 1) + 7000));
+
 
 setInterval(() => {
   console.log('eyes closed')
