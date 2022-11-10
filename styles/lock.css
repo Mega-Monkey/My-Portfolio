@@ -113,3 +113,19 @@
 	text-shadow: 0 0 5px #3f3;
 }
 
+@media only screen and (max-width: 900px) {
+  #lock-plate {
+		max-width: 394px;
+		width: 100%;
+	}
+
+	#lock-wrapper {
+		max-width: 394px;
+		width: 80%;
+		padding-right: 8px;
+	}
+
+	.lock-dial {
+		max-width: 50px;
+	}
+}

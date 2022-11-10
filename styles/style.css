@@ -88,6 +88,8 @@ font-family: monospace;
 		grid-column: span 2 / auto;
 		transform: scaleY(-1)
 	}
+
+
 }
 
 /* Line Section */
@@ -102,6 +104,19 @@ font-family: monospace;
 svg {
 	display: inline-block;
 	height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+	.line-container {
+    width: 100vw;
+    height: 90vh;
+    text-align: center;
+    overflow: hidden;
+	}
+
+	svg {
+    height: 75%;
+	}
 }
 
 /* Section Two */
