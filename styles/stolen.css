@@ -1,0 +1,23 @@
+body {
+  background-color: #ebedeb;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  overscroll-behavior: contain;
+  height: 100%;
+  overflow: hidden;
+}
+
+.rabbit {
+  background: url(../assets/rabbit-edit.png);
+  height: 400px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1, p {
+  text-align: center;
+  font-family: monospace;
+}
