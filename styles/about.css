@@ -2,3 +2,50 @@ img {
   height: 15px;
   width: auto;
 }
+
+.door {
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    position: absolute;
+    bottom: 0px;
+    right: 5px;
+    border-radius: 50% 50% 0 0
+  
+}
+
+.a-title {
+  width: 70%;
+  position: absolute;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: conic-gradient(white, white);
+  pointer-events: none;
+  mix-blend-mode: difference;
+  filter: drop-shadow(2px 4px 6px black);
+  font-family: monospace;
+  font-size: 20px;
+}
+
+
+canvas {
+  width: 100vw;
+  height: 100vh;
+}
+
+@media only screen and (max-width: 1050px) {
+  .a-title {
+    margin-top: 20px;
+    width: 80%;
+    font-size: 15px;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .a-title {
+    font-size: 12px;
+  }
+
+}

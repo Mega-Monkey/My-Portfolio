@@ -1,0 +1,64 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.hidden-object {
+
+}
+.apple {
+  height: 50px;
+  width: auto;
+  opacity: 0.5;
+}
+.apple-one {
+  position: absolute;
+  top: 60%;
+  left: 80%
+}
+
+.apple-two {
+  position: absolute;
+  top: 170%;
+  left: 44%
+}
+
+.apple-three {
+  position: absolute;
+  top: 250%;
+  left: 180%
+}
+
+.apple-four {
+  position: absolute;
+  top: 75%;
+  left: 170%
+}
+
+img {
+  width: 200vw
+}
+
+.counter-container {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+}
+
+.grey {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+.counter-container > .apple {
+  opacity: 1
+}
+
+.this {
+  background: url(../assets/hidden-object.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  overflow: scroll;
+  height: 100%;
+  width: 100%;
+}
