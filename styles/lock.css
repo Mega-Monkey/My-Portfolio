@@ -1,3 +1,4 @@
+
 #lock-plate {
 	padding: 30px 0;
 	/* border: 1px solid #cfd3d6; */
@@ -89,6 +90,8 @@
 	float: left;
 	position: relative;
 	cursor: move;
+
+	
 }
 
 #lock-wrapper .lock-dial ul{

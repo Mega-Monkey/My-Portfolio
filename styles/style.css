@@ -53,8 +53,9 @@ font-family: monospace;
 }
 
 .greeting-text > p {
-font-size: 25px;
+font-size: 15px;
 font-family: monospace;
+max-width: 75%;
 }
 
 .my-name {
